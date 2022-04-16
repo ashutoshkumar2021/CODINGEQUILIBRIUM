@@ -13,6 +13,8 @@
   <link rel="icon" type="image/x-icon" href="logo.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:ital@1&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="/todo.css">
+  <link rel="stylesheet" href="/todo2.css">
 </head>
 <body>
     
@@ -67,6 +69,8 @@
           <text text-anchor="middle" x="50" y="15" font-size="15" fill="white" fill-opacity="0.25">CODING </text>
           <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="1">CODING</text>
         </svg>
+
+        
         
           
           
@@ -76,6 +80,44 @@
       </svg>
     </div>
     
+    </section>
+    <section>
+      <center>
+        <h1>To-Do List</h1>
+        <label for="title">
+            <i>Title</i> <!-- =title - input example -->
+            <input id="title" size="40" placeholder="Title">
+          </label>
+          
+          <br>
+          <br>
+          
+          <label for="title">
+            <i>Time</i> 
+            <input type="time" id="time" size="40" placeholder="date">
+          </label>
+      
+          <input type="hidden" id="date" size="40">
+          
+          <br>
+          
+       
+          
+          <br>
+          
+          <label for="content">
+          <i>Description</i>  <!-- =content textarea example -->
+          <textarea id="content" cols="30" rows="10" placeholder="Write something."></textarea>
+          </label>
+      
+          <br>
+          
+      
+          
+          <button class="btn1" onclick="saveFormAsTextFile()">
+            Add 
+          </button>
+        </center>
     </section>
     <div class="second">
         <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top: 10vh;padding: 5vh;"></div>
